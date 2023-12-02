@@ -1,3 +1,19 @@
+## Docker Instruction
+- FROM
+- ADD
+- COPY
+- CMD
+- ENTRYPOINT
+- ENV
+- EXPOSE
+- MAINTAINER
+- RUN
+- USER
+- VOLUME
+- WORKDIR
+- LABEL
+- ARG
+
 # s6
 ```
 docker commit <container_id_or_name> <new_image_name>

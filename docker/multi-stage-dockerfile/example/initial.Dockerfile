@@ -1,8 +1,9 @@
-FROM ubuntu:latest As Builder
+FROM ubuntu:latest 
 
 RUN apt update
 RUN apt install vim -y
 RUN apt install unzip -y
+RUN apt install wget -y
 RUN apt install apache2 -y
 WORKDIR /var/www/html
 RUN rm -rf *

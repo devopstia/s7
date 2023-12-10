@@ -6,5 +6,5 @@ RUN mkdir /app
 WORKDIR /app
 COPY --from=Builder /usr/local/apache2/htdocs/ .
 
-EXPOSE 3000
+EXPOSE 5000
 CMD [ "/bin/bash" ]

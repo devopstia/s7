@@ -25,5 +25,6 @@ FROM httpd:latest
 WORKDIR /usr/local/apache2/htdocs/
 RUN rm -rf *
 COPY --from=Builder /app /usr/local/apache2/htdocs/
-CMD ["apachectl", "-D", "FOREGROUND"]
+# CMD ["apachectl", "-D", "FOREGROUND"]
+ENTRYPOINT ["apachectl", "-D", "FOREGROUND"]
 EXPOSE 80

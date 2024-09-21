@@ -1,6 +1,6 @@
 # Create a security group to allow SSH
 resource "aws_security_group" "allow_ssh" {
-  name        = "allow_ssh port for ec2"
+  name        = "allow ports 22, 80 and 8080"
   description = "Allow SSH inbound traffic"
   vpc_id      = "vpc-068852590ea4b093b"
   
